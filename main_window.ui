@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>648</width>
+    <height>503</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QFrame, QLabel, QToolTip {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 2px;
+    background-color:rgb(0, 61, 90) ;
+	color: white;
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QFrame" name="home_frame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="Home_label">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tw Cen MT</family>
+              <pointsize>31</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>HOME</string>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="btn_frame">
+         <property name="styleSheet">
+          <string notr="true">QPushbutton{background-color: #138086;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="1">
+           <widget class="QPushButton" name="quit_btn">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-color: #138086;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+    font: bold 20px;
+    min-width: 10em;
+    padding: 6px;
+	color:rgb(255,255,255);
+}
+QPushButton:pressed {
+	background-color:rgb(100,170,255)
+}</string>
+            </property>
+            <property name="text">
+             <string>Quit </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="get_prediction_btn">
+            <property name="styleSheet">
+             <string notr="true">	QPushButton {
+	background-color: #138086;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+    font: bold 20px;
+    min-width: 10em;
+    padding: 6px;
+	color:rgb(255,255,255);
+}
+QPushButton:pressed {
+	background-color:rgb(100,170,255)
+}</string>
+            </property>
+            <property name="text">
+             <string>Get Prediction</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="take_sample_btn">
+            <property name="styleSheet">
+             <string notr="true">	QPushButton {
+	background-color: #138086;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+    font: bold 20px;
+    min-width: 10em;
+    padding: 6px;
+	color:rgb(255,255,255);
+}
+QPushButton:pressed {
+	background-color:rgb(100,170,255)
+}</string>
+            </property>
+            <property name="text">
+             <string>Take Sample</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="train_model_btn">
+            <property name="styleSheet">
+             <string notr="true">	QPushButton {
+	background-color: #138086;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+    font: bold 20px;
+    min-width: 10em;
+    padding: 6px;
+	color:rgb(255,255,255);
+}
+QPushButton:pressed {
+	background-color:rgb(100,170,255)
+}</string>
+            </property>
+            <property name="text">
+             <string>Train The Model</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="calibrate_btn">
+            <property name="styleSheet">
+             <string notr="true">	QPushButton {
+	background-color: #138086;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+    font: bold 20px;
+    min-width: 10em;
+    padding: 6px;
+	color:rgb(255,255,255);
+}
+QPushButton:pressed {
+	background-color:rgb(100,170,255)
+}</string>
+            </property>
+            <property name="text">
+             <string>Calibrate the Spectrometer</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="pick_a_model_btn">
+            <property name="styleSheet">
+             <string notr="true">	QPushButton {
+	background-color: #138086;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+    font: bold 20px;
+    min-width: 10em;
+    padding: 6px;
+	color:rgb(255,255,255);
+}
+QPushButton:pressed {
+	background-color:rgb(100,170,255)
+}</string>
+            </property>
+            <property name="text">
+             <string>Pick a Model</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
